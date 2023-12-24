@@ -11,6 +11,8 @@ public class Base {
 		System.out.println(obj.name);
 		System.out.println(obj.status);
 		System.out.println(obj.c);
+		Base obj1  = new Base();
+	System.out.println(obj1.age = 80);
 	}
 	
 	int age ;
