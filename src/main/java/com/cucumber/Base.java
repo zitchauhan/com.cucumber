@@ -8,6 +8,9 @@ public class Base {
 		Base obj = new Base(22, "jitendra", false, 'a');
 		
 		System.out.println(obj.age);
+		System.out.println(obj.name);
+		System.out.println(obj.status);
+		System.out.println(obj.c);
 	}
 	
 	int age ;
@@ -31,6 +34,11 @@ public class Base {
 		this.c = c;
 	}
 	
+	public Base() {
+		
+		int age = 10;
+		
+	}
 	
 
 }
