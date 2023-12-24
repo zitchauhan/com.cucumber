@@ -14,7 +14,7 @@ public class Base {
 		Base obj1  = new Base();
 	System.out.println(obj1.age = 80);
 	}
-	
+	int b;
 	int age ;
 	String name ;
 	//int salary ;
