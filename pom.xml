@@ -16,6 +16,31 @@
 		<maven.compiler.source.version>17</maven.compiler.source.version>
 		<maven.compiler.target.version>17</maven.compiler.target.version>
 	</properties>
+	
+	
+	<!--     download it from sure file plung offical web side go to USES and copy the code from buuild  tag to end build tag-->
+	<build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.2.3</version>
+          
+          <!--  Here we need to add testng.xml file  inside   cofigutaion > suitXmlFiles> suitXmlFile -->
+          
+          <configuration>
+			  
+			  <suiteXmlFiles>
+				  <suiteXmlFile>testng.xml</suiteXmlFile>
+			  </suiteXmlFiles>
+		  </configuration>
+          
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+	
 
 	<dependencies>
 		<!-- log 4 J  dependency -->
