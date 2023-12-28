@@ -18,16 +18,18 @@ public class ChromeTest_Parallel {
 	public void beforeTest() {
 		System.out.println("Initilizing the Google Chrome Driver");
 		WebDriverManager.chromedriver().setup();
+		// Initialize the chrome driver
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		
+		
 	}
 
 	@Test
 	public void chromeTestMethod() {
 
-		// Initialize the chrome driver
 		System.out.println("The thread ID for chorome is " + Thread.currentThread().getId());
-		driver.get("https://google.com/");
+		driver.get("http://www.google.com");
 
 		// driver.findElement(By.xpath("//div[@class='category-cards']//div[1]//div[1]//div[1]")).click();
 

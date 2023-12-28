@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-skipped">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\zitch\AppData\Local\Temp\testng-eclipse--267647472\testng-customsuite.xml</span>
+                    <span>C:\Users\zitch\AppData\Local\Temp\testng-eclipse--1084335126\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,21 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Default_suite">
+                    <div class="method-list-content passed suite-Default_suite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.cucumber.FireFoxtest_parallel" class="method navigator-link" hash-for-method="chromeTestMethod">chromeTestMethod</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="RestAssured.MyFirstRestAssuredClass" class="method navigator-link" hash-for-method="Rest">Rest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Default_suite -->
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,93 +118,25 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-skipped">
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.cucumber.FireFoxtest_parallel</span>
+              <img src="passed.png"/>
+              <span class="class-name">RestAssured.MyFirstRestAssuredClass</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="chromeTestMethod">
-                  </a> <!-- chromeTestMethod -->
-                  <span class="method-name">chromeTestMethod</span>
-                  <div class="stack-trace">io.github.bonigarcia.wdm.config.WebDriverManagerException: org.apache.hc.client5.http.HttpHostConnectException: Connect to https://raw.githubusercontent.com:443 [raw.githubusercontent.com/49.44.79.236, raw.githubusercontent.com/2405:200:1607:2820:41:0:0:36] failed: Connection timed out: no further information
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
-	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1451)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1428)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-	at com.cucumber.FireFoxtest_parallel.beforeTest(FireFoxtest_parallel.java:21)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to https://raw.githubusercontent.com:443 [raw.githubusercontent.com/49.44.79.236, raw.githubusercontent.com/2405:200:1607:2820:41:0:0:36] failed: Connection timed out: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:751)
-	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.lambda$connectSocket$0(SSLConnectionSocketFactory.java:232)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
-	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:231)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:181)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:162)
-	at io.github.bonigarcia.wdm.WebDriverManager.openGitHubConnection(WebDriverManager.java:1616)
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromGitHub(WebDriverManager.java:1630)
-	at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.getDriverUrls(FirefoxDriverManager.java:102)
-	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1456)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1277)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1189)
-	... 27 more
-
-</div> <!-- stack-trace -->
+                  <a name="Rest">
+                  </a> <!-- Rest -->
+                  <span class="method-name">Rest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-skipped -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\zitch\AppData\Local\Temp\testng-eclipse--267647472\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\zitch\AppData\Local\Temp\testng-eclipse--1084335126\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -213,7 +145,11 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to https
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.cucumber.FireFoxtest_parallel&quot;/&gt;
+      &lt;class name=&quot;RestAssured.MyFirstRestAssuredClass&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;Rest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- RestAssured.MyFirstRestAssuredClass --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -255,14 +191,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'chromeTestMethod')
-data.setCell(0, 2, 'com.cucumber.FireFoxtest_parallel')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'Rest')
+data.setCell(0, 2, 'RestAssured.MyFirstRestAssuredClass')
+data.setCell(0, 3, 2014);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -277,9 +213,30 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">8 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">RestAssured.MyFirstRestAssuredClass</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">getResponseHeaders</span>
+                <br/>
+                <span class="ignored-method-name">getResponseBody_withQureyParam</span>
+                <br/>
+                <span class="ignored-method-name">getResponseBody</span>
+                <br/>
+                <span class="ignored-method-name">getStatuscode_withQureyParam</span>
+                <br/>
+                <span class="ignored-method-name">getSpecificPartOfResponseBody1</span>
+                <br/>
+                <span class="ignored-method-name">getResponseTime</span>
+                <br/>
+                <span class="ignored-method-name">getResponseContentType</span>
+                <br/>
+                <span class="ignored-method-name">getSpecificValueOfResponseBody</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -288,13 +245,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.cucumber.FireFoxtest_parallel</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">beforeTest</span>
+              <div class="chronological-class-name">RestAssured.MyFirstRestAssuredClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Rest</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

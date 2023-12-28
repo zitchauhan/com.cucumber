@@ -19,15 +19,12 @@ public class FireFoxtest_parallel {
 	public void beforeTest() {
 		System.out.println("Initilizing the firefox  Driver");
 		WebDriverManager.firefoxdriver().setup();
-
 		// Create FirefoxOptions and set the binary path if necessary
 		FirefoxOptions options = new FirefoxOptions();
-		options.setBinary("C:\\Users\\zitch\\AppData\\Local\\Mozilla Firefox\\firefox.exe"); // Uncomment and set if
+		options.setBinary("C:/Users/zitch/AppData/Local/Mozilla Firefox/firefox.exe"); // Uncomment and set if
 																								// needed
-
 		// Initialize the WebDriver instance
 		driver = new FirefoxDriver(options);
-
 		driver.manage().window().maximize();
 	}
 
@@ -36,7 +33,9 @@ public class FireFoxtest_parallel {
 
 		// Initialize the chrome driver
 		System.out.println("The thread ID for firefox is " + Thread.currentThread().getId());
-		driver.get("https://google.com/");
+	
+		driver.get("http://www.google.com");
+		//System.out.println(driver.getCurrentUrl());
 
 		// driver.findElement(By.xpath("//div[@class='category-cards']//div[1]//div[1]//div[1]")).click();
 

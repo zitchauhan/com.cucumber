@@ -1,21 +1,38 @@
 package com.TestRunner;
 
+import org.testng.annotations.Test;
+import io.cucumber.core.cli.Main;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
+
 import io.cucumber.testng.CucumberOptions;
 
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 
-@CucumberOptions(
-    features = "src/test/resources/features",
-    glue = "com.cucumber.stepDefinitions" //
-    
-    //Replace with your step definitions package
+@CucumberOptions(features = "src/test/resources/features", // Path to your feature files
+		glue = "stepDefinitions" // Path to your step definitions
 )
-public class CucumberTestRunner extends AbstractTestNGCucumberTests {
-    // Your TestNG runner configuration
+@Test
+public class Runner extends AbstractTestNGCucumberTests {
+	// This class acts as a TestNG runner for Cucumber tests
 }
 
+/*
+ * @CucumberOptions(
+ * 
+ * 
+ * Examples: - @CucumberOptions(glue = "com.example.application")
+ * - @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value =
+ * "com.example.application") - src/test/resources/junit-platform.properties
+ * cucumber.glue=com.example.application -
+ * src/test/resources/cucumber.properties cucumber.glue=com.example.application
+ * 
+ * 
+ * features = "src/test/resources/features", glue =
+ * "C:\\Users\\zitch\\eclipse-workspace_2023\\com.cucumber\\src\\test\\java\\stepDefinitions"
+ * ) public class Runner extends AbstractTestNGCucumberTests { // Your TestNG
+ * runner configuration }
+ */
 
 /*
  * @CucumberOptions (
