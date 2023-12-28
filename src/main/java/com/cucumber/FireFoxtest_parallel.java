@@ -41,7 +41,7 @@ public class FireFoxtest_parallel {
 		// driver.findElement(By.xpath("//div[@class='category-cards']//div[1]//div[1]//div[1]")).click();
 
 	}
-
+//looks good
 	@AfterTest
 	public void afterTest() {
 		System.out.println("Closing the browser ");
