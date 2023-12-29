@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RestAssured.MyFirstRestAssuredClass">
+      <class name="RestAssured.OnrMoreRestAssured">
         <methods>
-          <include name="getSpecificValueOfResponseBody"/>
+          <include name="Tet"/>
         </methods>
-      </class> <!-- RestAssured.MyFirstRestAssuredClass -->
+      </class> <!-- RestAssured.OnrMoreRestAssured -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

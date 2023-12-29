@@ -7,6 +7,7 @@ import static org.hamcrest.Matchers.*;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.http.Header;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -62,15 +63,9 @@ public class OnrMoreRestAssured {
 	public void testGetPost() {
 		RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
 
-	String s= 	given().
-		when().
-		get("/posts/1").
-		then().
-		statusCode(200).
-		body("userId", equalTo(1)).
-		toString();
-	
-	System.out.println(s);
+		String s = given().when().get("/posts/1").then().statusCode(200).body("userId", equalTo(1)).toString();
+
+		System.out.println(s);
 		// body("id", equalTo(1)).
 		// body("title", equalTo("sunt aut facere repellat provident occaecati excepturi
 		// optio reprehenderit")).
@@ -79,4 +74,43 @@ public class OnrMoreRestAssured {
 		// autem sunt rem eveniet architecto"));
 	}
 
+	
+    @Test
+    public void getThenPostRequest() {
+        // Define the base URL and path parameters for GET request
+        String baseUrl = "https://your-api-endpoint.com";
+        String getPath = "/get-endpoint";
+        String postPath = "/post-endpoint";
+
+        // Set base URI
+        RestAssured.baseURI = baseUrl;
+
+        // Perform GET request and capture the response
+        Response getResponse = given()
+                .contentType(ContentType.JSON)
+                .header("Authorization", "Bearer Your_Auth_Token") // If needed
+                .queryParam("param1", "value1") // Query parameters if needed
+                .queryParam("param2", "value2")
+                .when()
+                .get(getPath)
+                .then()
+                .statusCode(200)
+                .extract()
+                .response();
+
+        // Extract data from the response
+        String extractedData = getResponse.path("some_key");
+
+        // Perform POST request using extracted data from GET response
+        given()
+            .contentType(ContentType.JSON)
+            .header("Authorization", "Bearer Your_Auth_Token") // If needed
+            .body("{ \"data\": \"" + extractedData + "\" }") // Use extracted data in the POST request body
+        .when()
+            .post(postPath)
+        .then()
+            .statusCode(200) // Check status code for the POST request
+            .body("some_other_key", equalTo("expected_value")); // Validate response body if needed
+    }
 }
+
