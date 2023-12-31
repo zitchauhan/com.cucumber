@@ -1,12 +1,12 @@
 public class OrderOfCodeExcution {
-	static int staticVar = 1;
-	int instanceVar = 2;
+	static int    staticVar = 1;
+	       int 	instanceVar = 2;
 
 	static {
 		System.out.println("Static block is executed first 1.");
 		staticVar = 10;
 	}
-
+//
 	{
 		System.out.println("Instance block is executed before constructor.2 ");
 		instanceVar = 20;
