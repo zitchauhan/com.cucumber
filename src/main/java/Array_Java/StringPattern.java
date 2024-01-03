@@ -1,3 +1,6 @@
+package Array_Java;
+
+
 
 public class StringPattern {
 	

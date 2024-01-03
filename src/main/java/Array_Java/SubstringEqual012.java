@@ -1,3 +1,4 @@
+
 package Array_Java;
 public class SubstringEqual012 {
     static int getSubstringWithEqual012(String s) {

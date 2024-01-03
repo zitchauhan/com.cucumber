@@ -1,3 +1,4 @@
+
 package Array_Java;
 
 import java.util.Arrays;
@@ -9,7 +10,7 @@ import java.util.TreeMap;
 
 import org.apache.commons.collections4.Get;
 
-public class DuplicateFormString {
+public class DuplicateFromString {
 	public static void main(String[] args) {
 		String str = "daabbbcccc";
 		String output = "d1a2b3c4";
