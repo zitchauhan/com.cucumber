@@ -7,11 +7,11 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class StepDef {
+public class StepDefinitions {
 
 	private WebDriver driver;
 
-	public StepDef() {
+	public StepDefinitions() {
 		this.driver = Hooks.getDriver();
 
 	}
