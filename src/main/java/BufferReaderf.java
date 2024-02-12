@@ -13,7 +13,7 @@ public class BufferReaderf {
 		WebDriver driver = new ChromeDriver();
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.)
+	//	wait.until(ExpectedConditions.)
 
 	}
 }

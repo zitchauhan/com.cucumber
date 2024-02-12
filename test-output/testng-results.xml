@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-29T11:51:29 IST" name="Default suite" finished-at="2023-12-29T11:51:32 IST" duration-ms="2440">
+  <suite started-at="2024-02-12T13:23:37 IST" name="Default suite" finished-at="2024-02-12T13:24:05 IST" duration-ms="27870">
     <groups>
     </groups>
-    <test started-at="2023-12-29T11:51:29 IST" name="Default test" finished-at="2023-12-29T11:51:32 IST" duration-ms="2440">
-      <class name="RestAssured.OnrMoreRestAssured">
-        <test-method signature="testGetPost()[pri:0, instance:RestAssured.OnrMoreRestAssured@3c41ed1d]" started-at="2023-12-29T11:51:29 IST" name="testGetPost" finished-at="2023-12-29T11:51:32 IST" duration-ms="2395" status="PASS">
+    <test started-at="2024-02-12T13:23:37 IST" name="Default test" finished-at="2024-02-12T13:24:05 IST" duration-ms="27870">
+      <class name="Selenium4.WindowsHandle">
+        <test-method signature="handle()[pri:0, instance:Selenium4.WindowsHandle@662ac478]" started-at="2024-02-12T13:23:37 IST" name="handle" finished-at="2024-02-12T13:24:05 IST" duration-ms="27826" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetPost -->
-      </class> <!-- RestAssured.OnrMoreRestAssured -->
+        </test-method> <!-- handle -->
+      </class> <!-- Selenium4.WindowsHandle -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
