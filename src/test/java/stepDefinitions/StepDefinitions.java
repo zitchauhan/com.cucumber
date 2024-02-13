@@ -65,7 +65,7 @@ public class StepDefinitions {
 		//
 		// For other transformations you can register a DataTableType.
 
-		List<List<String>> data = dataTable.rows();
+		List<List<String>> data = dataTable.asLists();
 		driver.findElement(By.id("log")).sendKeys(data.get(0).get(0));
 		driver.findElement(By.id("pwd")).sendKeys(data.get(0).get(1));
 		driver.findElement(By.id("login")).click();
