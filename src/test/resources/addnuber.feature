@@ -1,24 +1,16 @@
-Feature: Add  number s
+Feature: Add numbers
 
   @tag1
-  Scenario: add number with given input
-    Given user have two number
-    And user  want to add <1> and <2>
-    When when user add two number
-    Then use should get result
+  Scenario: Add numbers with given input
+    Given user has two numbers 1 and 2
+    When the user adds the two numbers
+    Then the user should get the result
 
-    
-  Scenario Outline: 
-  
-  Given user have two number
-  
-    Then use should get result
-  
-Examples: 
-  
-  numers 
-  
-  |1|
-  |1|
-  |1|     
-  
+  Scenario Outline: Add numbers with given input
+    Given user has two numbers <Number1> and <Number2>
+    When the user adds the two numbers
+    Then the user should get the result
+
+    Examples: 
+      | Number1 | Number2 |
+      |       1 |       1 |
