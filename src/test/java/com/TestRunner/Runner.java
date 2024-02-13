@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 
-@CucumberOptions(features = "src/test/resources/features", // Path to your feature files
+@CucumberOptions(features = "src/test/resources", // Path to your feature files
 		glue = "stepDefinitions" // Path to your step definitions
 )
 @Test
