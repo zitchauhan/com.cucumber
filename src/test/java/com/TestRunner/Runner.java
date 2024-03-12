@@ -9,8 +9,10 @@ import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 
-@CucumberOptions(features = "src/test/resources", // Path to your feature files
-		glue = "stepDefinitions" // Path to your step definitions
+@CucumberOptions(
+		features = "src/test/resources", // Path to your feature files
+		glue = "stepDefinitions" ,// Path to your step definitions
+		tags = "@test"
 )
 @Test
 public class Runner extends AbstractTestNGCucumberTests {

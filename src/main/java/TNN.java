@@ -14,7 +14,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 
-public class T {
+public class TNN {
 
 //	static Logger log = Logger.class;
 	@Test

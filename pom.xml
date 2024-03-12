@@ -45,6 +45,34 @@
 
 
 	<dependencies>
+
+		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+			<version>12.4.0.jre8</version>
+		</dependency>
+
+
+		<!--
+		https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc_auth -->
+		<!--
+		https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc_auth -->
+
+		<!--
+		https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc_auth -->
+		<!--
+		https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc_auth -->
+
+
+		<!--			 Microsoft JDBC driver for SQL Server 
+			<dependency>
+				<groupId>com.microsoft.sqlserver</groupId>
+				<artifactId>mssql-jdbc</artifactId>
+				<version>9.2.1.jre8</version>  Replace with the desired
+				version 
+			</dependency>-->
+
+
 		<!-- Web driver managers dependncies -->
 		<!--https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 		<dependency>
@@ -55,7 +83,7 @@
 
 
 		<!-- log 4 J  dependency -->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-api</artifactId>
 			<version>2.22.0</version>
@@ -65,6 +93,33 @@
 			<artifactId>log4j-core</artifactId>
 			<version>2.22.0</version>
 		</dependency>
+		<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-slf4j-impl</artifactId>
+    <version>2.14.1</version>
+</dependency>
+
+-->
+
+
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-jpl</artifactId>
+    <version>2.23.0</version>
+  </dependency>
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.23.0</version>
+  </dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j -->
+<!--<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>3.0.0-beta2</version>
+    <type>pom</type>
+</dependency>-->
 
 
 		<!-- selenium  dependency -->
@@ -101,12 +156,12 @@
 		</dependency>
 
 		<!-- testng -->
-		<dependency>
+		<!--		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.8.0</version> <!-- Replace with the latest version -->
+			<version>7.8.0</version>  Replace with the latest version 
 		</dependency>
-
+-->
 		<!-- excel reader -->
 
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
