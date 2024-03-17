@@ -34,3 +34,18 @@ public class StepDefinitionss {
         assertEquals(expectedResult, result);
     }
 }
+class Calculator {
+    private int number1;
+    private int number2;
+
+    public void enter(int number) {
+        if (number1 == 0)
+            number1 = number;
+        else
+            number2 = number;
+    }
+
+    public int add() {
+        return number1 + number2;
+    }
+}

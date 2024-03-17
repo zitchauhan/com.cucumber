@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
 
 import org.openqa.selenium.WebDriver;
 
@@ -225,6 +226,16 @@ public class Pattern
 			System.out.println();
 		}
 
+	}
+
+	public Matcher matcher(String text) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public static Pattern compile(String pattern) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
